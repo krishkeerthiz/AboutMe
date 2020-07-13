@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/text_size"
+    android:paddingEnd="@dimen/text_size"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/name_text"
+        style="@style/text_view_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/name"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/app_icon"
+        style="@style/text_view_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/app_icon"
+        android:src="@android:drawable/sym_def_app_icon"
+        />
+
+    <EditText
+        android:id="@+id/comment_editText"
+        style="@style/text_view_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hint"
+        android:inputType="textPersonName"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/done_button"
+        style="@style/text_view_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#0AED13"
+        android:text="@string/done"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/comment_textView"
+        style="@style/text_view_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:visibility="gone" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="209dp"
+                android:contentDescription="@string/name"
+                android:src="@drawable/bill_gates" />
+
+            <TextView
+                android:id="@+id/bio_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.9"
+                android:text="@string/bio"
+                android:textAlignment="viewStart"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,38 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">AboutMe</string>
+    <string name="name">Bill Gates</string>
+    <string name="bio">\nWho Is Bill Gates?\n
+
+\t\t\tEntrepreneur and businessman Bill Gates and his business partner Paul Allen founded and built the worlds largest software business, Microsoft,
+through technological innovation, keen business strategy and aggressive business tactics. In the process, Gates became one of the richest men in the world.
+ In February 2014, Gates announced that he was stepping down as Microsofts chairman to focus on charitable work at his foundation, the Bill and Melinda Gates Foundation.
+        \n\nEarly Life:\n
+
+\t\t\tGates was born William Henry Gates III on October 28, 1955, in Seattle, Washington. Gates grew up in an upper-middle-class family with his older sister,
+Kristianne, and younger sister, Libby. Their father, William H. Gates Sr., was a promising, if somewhat shy, law student when he met his future wife,
+Mary Maxwell. She was an athletic, outgoing student at the University of Washington, actively involved in student affairs and leadership.
+The Gates family atmosphere was warm and close, and all three children were encouraged to be competitive and strive for excellence.
+Gates showed early signs of competitiveness when he coordinated family athletic games at their summer house on Puget Sound.
+He also relished in playing board games (Risk was his favorite) and excelled at Monopoly.
+Gates had a very close relationship with his mother, Mary, who after a brief career as a teacher devoted her time to helping raise
+the children and working on civic affairs and with charities. She also served on several corporate boards, including those of the First
+Interstate Bank in Seattle (founded by her grandfather), the United Way and International Business Machines (IBM). She would often take Gates
+along when she volunteered in schools and at community organizations.
+
+\n\nBill Gates Education:\n
+
+\t\t\tGates was a voracious reader as a child, spending many hours poring over reference books such as the encyclopedia.
+Around the age of 11 or 12, Gatess parents began to have concerns about his behavior. He was doing well in school,
+ but he seemed bored and withdrawn at times, and his parents worried he might become a loner.
+Though they were strong believers in public education, when Gates turned 13, his parents enrolled him at Seattles exclusive preparatory Lakeside School.
+He blossomed in nearly all his subjects, excelling in math and science, but also doing very well in drama and English.
+While at Lakeside School, a Seattle computer company offered to provide computer time for the students.
+The Mothers Club used proceeds from the schools rummage sale to purchase a teletype terminal for students to use.
+ Gates became entranced with what a computer could do and spent much of his free time working on the terminal.
+He wrote a tic-tac-toe program in BASIC computer language that allowed users to play against the computer.
+Gates graduated from Lakeside in 1973. He scored 1590 out of 1600 on the college SAT test, a feat of intellectual
+achievement that he boasted about for several years when introducing himself to new people.</string>
+    <string name="app_icon">app icon</string>
+    <string name="hint">Write your comments...</string>
+    <string name="done">Done</string>
+</resources>
