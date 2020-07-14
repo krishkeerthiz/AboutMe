@@ -6,18 +6,21 @@ import android.os.Bundle
 import android.view.View
 import android.view.View.VISIBLE
 import android.view.inputmethod.InputMethodManager
-import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
-import kotlinx.android.synthetic.main.activity_main.*
+import androidx.databinding.DataBindingUtil
+import com.example.aboutme.databinding.ActivityMainBinding
+
 
 class MainActivity : AppCompatActivity() {
 
+    private lateinit var binding :ActivityMainBinding
+    private val MyName: MyName = MyName("Bill Gates")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-
-        findViewById<Button>(R.id.done_button).setOnClickListener()
+        binding = DataBindingUtil.setContentView(this,R.layout.activity_main)
+        binding.myName= MyName
+        binding.doneButton.setOnClickListener()
         {
             addComment(it)
         }
@@ -28,10 +31,14 @@ class MainActivity : AppCompatActivity() {
         val cmntEditText = findViewById<EditText>(R.id.comment_editText)
         val cmntText = findViewById<TextView>(R.id.comment_textView)
 
-        cmntText.text = cmntEditText.text
-        cmntEditText.visibility = View.GONE
-        view.visibility = View.GONE
-        cmntText.visibility = VISIBLE
+        binding.apply {
+            myName?.comment= cmntEditText.text.toString()
+            invalidateAll()
+            cmntEditText.visibility = View.GONE
+            view.visibility = View.GONE
+            cmntText.visibility = VISIBLE
+        }
+
 
         // hide keyboard
         val imm = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
